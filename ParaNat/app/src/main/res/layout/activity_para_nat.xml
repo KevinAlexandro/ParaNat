@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_main_app"
+    tools:context="com.example.kevin.paranat.ParaNat">
+
+    <TextView
+        android:id="@+id/lblApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:fontFamily="cursive"
+        android:paddingBottom="5dp"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"
+        android:paddingTop="5dp"
+        android:text="Para Nat:"
+        android:textAppearance="@android:style/TextAppearance.Holo.DialogWindowTitle"
+        android:textColor="@android:color/white"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnNatFace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@mipmap/nat_emoji_circle"
+        android:minHeight="80dp"
+        android:minWidth="80dp"
+        android:onClick="showRandomImage"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp" />
+
+    <ListView
+        android:id="@+id/lvOpciones"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btnNatFace"
+        android:layout_below="@+id/lblApp"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
